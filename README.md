@@ -1,7 +1,7 @@
-----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------
 ## 🚗 Six200 Car & Motorcycle Rental
-## Rent • Explore • Experience
-----------------------------------------------------------------------------------------------------------------------------------------
+##    Rent • Explore • Experience
+----------------------------------------------
 
 <img width="1343" height="647" alt="image" src="https://github.com/user-attachments/assets/9e7b484a-5c38-40e3-9b51-bb7cfa5208da" />
 
@@ -81,7 +81,11 @@ The website was designed to deliver a premium customer experience through:
 
 ## 📸 Screenshots
 
-> *(Add screenshots here after the project is finalized.)*
+<img width="1357" height="643" alt="image" src="https://github.com/user-attachments/assets/5493814e-3ac9-4633-bd9c-550efa271d3f" />
+<img width="1358" height="655" alt="image" src="https://github.com/user-attachments/assets/6661d873-4da5-4eb7-88af-000281d513e0" />
+<img width="1333" height="638" alt="image" src="https://github.com/user-attachments/assets/3ead5b91-a2a7-418f-b3ac-012fe1e5d484" />
+<img width="1339" height="686" alt="image" src="https://github.com/user-attachments/assets/9d1896c4-7a23-44a5-93cb-9a217ffc2de0" />
+
 
 ---
 
