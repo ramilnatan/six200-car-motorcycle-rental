@@ -7,6 +7,7 @@
 
 
 
+---
 
 A modern, premium, and fully responsive Car & Motorcycle Rental website built with **React**, **TypeScript**, and **Tailwind CSS**. Designed with a clean luxury aesthetic inspired by premium brands such as Apple, Tesla, and Hertz, providing a smooth and engaging user experience across desktop, tablet, and mobile devices.
 
