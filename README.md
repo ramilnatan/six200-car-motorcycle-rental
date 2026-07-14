@@ -20,6 +20,12 @@ The project focuses on elegant UI/UX, responsive design, and a scalable architec
 
 ---
 
+## Live Demo
+
+Website:https://six200-luxury-car.bolt.host/
+
+---
+
 ## 🚀 Features
 
 - 🎨 Modern luxury white-themed UI
@@ -94,12 +100,6 @@ The website was designed to deliver a premium customer experience through:
 🚧 Proposal / Demo Version
 
 This project currently serves as a UI/UX proposal for a potential client and will continue to evolve with additional backend functionality and production-ready features.
-
----
-
-## Live Demo
-
-Website:https://six200-luxury-car.bolt.host/
 
 ---
 
