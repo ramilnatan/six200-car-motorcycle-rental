@@ -3,6 +3,7 @@ import { Plus, Edit2, Trash2, X, Check, Upload } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import type { Vehicle } from '../types'
 import { Skeleton } from '../components/common/Skeleton'
+import ImageUpload from '../components/common/ImageUpload'
 import { CAR_CATEGORIES, MOTORCYCLE_CATEGORIES } from '../constants'
 
 type Mode = 'add' | 'edit' | null
@@ -159,7 +160,12 @@ export default function AdminVehicles() {
                   </select>
                 </div>
                 <div className="flex items-end"><label className="flex items-center gap-2 text-sm cursor-pointer pb-1"><input type="checkbox" checked={form.is_featured} onChange={e=>setForm({...form,is_featured:e.target.checked})} className="accent-[#111111] w-4 h-4"/>Featured on homepage</label></div>
-                <div className="col-span-2"><label className="label">Photo URL</label><input type="text" value={form.photo_url??''} onChange={e=>setForm({...form,photo_url:e.target.value})} className="input-field" placeholder="https://..."/></div>
+                <div className="col-span-2">
+                  <ImageUpload
+                    value={form.photo_url ?? null}
+                    onUpload={(url) => setForm({ ...form, photo_url: url })}
+                  />
+                </div>
                 <div className="col-span-2"><label className="label">Features (comma-separated)</label><input type="text" value={featInput} onChange={e=>setFeatInput(e.target.value)} className="input-field" placeholder="Air Conditioning, GPS, Bluetooth"/></div>
                 <div className="col-span-2"><label className="label">Description</label><textarea value={form.description??''} onChange={e=>setForm({...form,description:e.target.value})} rows={3} className="input-field resize-none"/></div>
               </div>
