@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Car, Eye, EyeOff, Lock, Mail, AlertCircle } from 'lucide-react'
+import { Car, Eye, EyeOff, Lock, Mail, AlertCircle, ArrowLeft } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 
 export default function AdminLoginPage() {
@@ -23,7 +23,14 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen bg-[#111111] flex items-center justify-center px-4">
       <div className="w-full max-w-md">
-        <div className="text-center mb-8">
+        <button
+            onClick={() => navigate('/')}
+               className="flex items-center gap-1.5 text-sm text-white/40 hover:text-   white/70 transition-colors duration-200 mb-6"
+             >
+            <ArrowLeft size={15} />
+              Back to Home
+         </button>
+       <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2.5 mb-4">
             <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center"><Car size={20} className="text-white"/></div>
             <div className="text-left"><span className="block text-lg font-bold text-white font-display">Six200</span><span className="block text-[10px] text-white/40 uppercase tracking-widest">Admin Portal</span></div>
