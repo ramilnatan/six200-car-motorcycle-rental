@@ -59,8 +59,8 @@ export default function Footer() {
           <div className="mt-5 pt-5 border-t border-white/5 text-center">
             <p className="text-xs text-white/30 flex items-center justify-center gap-1.5">
               Designed & Developed with <Heart size={11} className="text-red-400/60 fill-red-400/60" /> by{' '}
-              <span className="text-white/50 font-medium">Engr. Ramil V. Natan</span>
-              &nbsp;·&nbsp;Powered by <span className="text-white/50 font-medium">Salve</span>
+              <span className="text-green-400/70 font-medium">Engr. Ramil V. Natan</span>
+              &nbsp;·&nbsp;Powered by <span className="text-red-400/70 font-medium">Salve</span>
             </p>
           </div>
         </div>
