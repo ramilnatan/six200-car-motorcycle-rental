@@ -30,7 +30,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 flex flex-col items-center text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/80 text-xs font-medium tracking-wider uppercase mb-6">
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse" />
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
           Premium Vehicle Rental Service
         </div>
 
