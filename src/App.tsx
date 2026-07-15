@@ -12,6 +12,7 @@ import AdminDashboard from './pages/AdminDashboard'
 import AdminVehicles from './pages/AdminVehicles'
 import AdminBookings from './pages/AdminBookings'
 import AdminReviews from './pages/AdminReviews'
+import AdminSettings from './pages/AdminSettings'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="vehicles" element={<AdminVehicles />} />
           <Route path="bookings" element={<AdminBookings />} />
           <Route path="reviews" element={<AdminReviews />} />
+          <Route path="settings" element={<AdminSettings />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

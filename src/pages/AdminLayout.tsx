@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, Link, Outlet, useLocation } from 'react-router-dom'
-import { LayoutDashboard, Car, CalendarCheck, Star, LogOut, Menu, X, ChevronRight } from 'lucide-react'
+import { LayoutDashboard, Car, CalendarCheck, Star, Settings, LogOut, Menu, X, ChevronRight } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 
 const navItems = [
@@ -8,6 +8,7 @@ const navItems = [
   { path:'/admin/vehicles',  icon:Car,             label:'Vehicles' },
   { path:'/admin/bookings',  icon:CalendarCheck,   label:'Bookings' },
   { path:'/admin/reviews',   icon:Star,            label:'Reviews' },
+  { path:'/admin/settings',  icon:Settings,        label:'Settings' },
 ]
 
 export default function AdminLayout() {

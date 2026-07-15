@@ -1,11 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MapPin, Calendar, ChevronDown, Search } from 'lucide-react'
 import { PICKUP_LOCATIONS } from '../../constants'
+import { supabase } from '../../lib/supabase'
+
+const FALLBACK_HERO = 'https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=1920'
 
 export default function HeroSection() {
   const navigate = useNavigate()
   const [form, setForm] = useState({ location:'', pickup_date:'', return_date:'', vehicle_type:'all' })
+  const [heroImage, setHeroImage] = useState(FALLBACK_HERO)
+
+  useEffect(() => {
+    async function loadHero() {
+      const { data } = await supabase
+        .from('site_settings')
+        .select('value')
+        .eq('key', 'hero_image_url')
+        .maybeSingle()
+      if (data?.value) setHeroImage(data.value)
+    }
+    loadHero()
+  }, [])
 
   function handleSearch(e: React.FormEvent) {
     e.preventDefault()
@@ -20,7 +36,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/1335077/pexels-photo-1335077.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={heroImage}
           alt="Premium vehicles"
           className="w-full h-full object-cover"
           style={{ animation: 'slowZoom 20s ease-in-out infinite alternate' }}
