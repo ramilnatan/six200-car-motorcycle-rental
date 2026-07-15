@@ -13,9 +13,12 @@ export default function CTASection() {
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6">
           Ready for Your<br/>Next Journey?
         </h2>
-        <p className="text-lg text-white/70 max-w-xl mx-auto mb-10">
-          Explore Dumaguete, Negros Oriental in style. Choose from our premium fleet and experience the road like never before.
-        </p>
+         <p 
+          className="text-lg max-w-xl mx-auto mb-10" 
+          style={{ color: '#000000', textShadow: '0 2px 8px rgba(255,255,255,0.5)' }}
+          >
+          Explore Dumaguete, Negros Oriental in style. Choose from our premium fleet and            experience the road like never before.
+          </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link to="/booking" className="btn-primary bg-white text-[#111111] hover:bg-white/90 shadow-luxury-xl">
             Book Your Vehicle Today<ArrowRight size={16}/>
