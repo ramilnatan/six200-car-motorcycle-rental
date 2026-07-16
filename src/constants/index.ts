@@ -18,9 +18,9 @@ export const ALL_CATEGORIES = [...CAR_CATEGORIES, ...MOTORCYCLE_CATEGORIES]
 
 export const PICKUP_LOCATIONS = [
   'Six200 Main Office — EJ Blanco St., Piapi, Dumaguete City',
-  'Negros Oriental - Negros'
-  'Negros OOccidental - Negros'
-  'Cebu Island - Cebu'
-  'Siquijor Island - Negros'
+  'Negros Oriental - Negros',
+  'Negros OOccidental - Negros',
+  'Cebu Island - Cebu',
+  'Siquijor Island - Negros',
   'Custom Location (specify in remarks)',
 ]
