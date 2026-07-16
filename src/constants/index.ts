@@ -17,13 +17,10 @@ export const MOTORCYCLE_CATEGORIES = [
 export const ALL_CATEGORIES = [...CAR_CATEGORIES, ...MOTORCYCLE_CATEGORIES]
 
 export const PICKUP_LOCATIONS = [
-  'Six200 Main Office — Quezon City',
-  'Six200 Branch — Makati CBD',
-  'Six200 Branch — BGC, Taguig',
-  'Six200 Branch — Cebu City',
-  'Six200 Branch — Davao City',
-  'Airport Pickup — NAIA Terminal 1',
-  'Airport Pickup — NAIA Terminal 3',
-  'Airport Pickup — Clark International Airport',
+  'Six200 Main Office — EJ Blanco St., Piapi, Dumaguete City',
+  'Negros Oriental - Negros'
+  'Negros OOccidental - Negros'
+  'Cebu Island - Cebu'
+  'Siquijor Island - Negros'
   'Custom Location (specify in remarks)',
 ]
