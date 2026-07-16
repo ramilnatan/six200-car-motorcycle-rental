@@ -1,11 +1,29 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
+import { supabase } from '../../lib/supabase'
+
+const FALLBACK_CTA = 'https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1920'
 
 export default function CTASection() {
+  const [ctaImage, setCtaImage] = useState(FALLBACK_CTA)
+
+  useEffect(() => {
+    async function loadCta() {
+      const { data } = await supabase
+        .from('site_settings')
+        .select('value')
+        .eq('key', 'cta_image_url')
+        .maybeSingle()
+      if (data?.value) setCtaImage(data.value)
+    }
+    loadCta()
+  }, [])
+
   return (
     <section className="relative py-24 overflow-hidden">
       <div className="absolute inset-0">
-        <img src="https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="" className="w-full h-full object-cover" />
+        <img src={ctaImage} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-[#111111]/82" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
